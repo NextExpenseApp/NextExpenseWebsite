@@ -3,6 +3,7 @@
     <section class="hero {% if callouts.height %} {{ callouts.height }} {% else %} is-medium {% endif %} {{ callouts.style }}">
         <div class="hero-body">
             <div class="container">
+                <button class="btn btn-danger">Google play</button>
                 <div class="columns is-multiline is-centered">
                     {% for callout in callouts.items %}
                         <div class="column is-4 has-text-centered">
@@ -15,6 +16,8 @@
                             {% endif %}
                             </div>
                             {% endif %}
+                            <br>
+                            <br>
                             <p class="title is-5">{{ callout.title }}</p>
                             <p class="subtitle is-5">{{ callout.subtitle }}</p>
                             

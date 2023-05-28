@@ -1,6 +1,6 @@
 # Site Settings
 lang: en
-title: Bulma Clean Theme
+title: 
 tagline: Bulma Clean Theme
 email: your-email@domain.com
 description: >
@@ -8,6 +8,7 @@ description: >
 baseurl:
 url:
 permalink: pretty
+logo: Icon-512.png
 #favicon: /path/to/favicon.png
 gh_sponsor: chrisrhymes
 #hide_share_buttons: true
