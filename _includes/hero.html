@@ -12,11 +12,32 @@
 <section class="hero {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} is-bold is-primary" {% if page.hero_image %} style="background: url('{{ page.hero_image }}') no-repeat center center; background-size: cover;" {% endif %}>
     <div class="hero-body {% if page.hero_darken %} hero-darken {% endif %}">
         <div class="container hero-title">
-            <h1 class="title is-2">{{ page.title }}</h1>
-            <p class="subtitle is-3">{{ page.subtitle }}</p>
+            <h1 class="title is-2" id="companionMethods"></h1>
             {% if page.hero_link %}
                 <a href="{{ page.hero_link | relative_url }}" class="button is-info is-large">{{ page.hero_link_text }}</a>
             {% endif %}
         </div>
+        <p id="companionMethods"></p>
+
     </div>
 </section>
+
+<script>
+
+
+new TypeIt("#companionMethods", {
+  speed: 50,
+  waitUntilVisible: true,
+})
+  .type("Nxt", { delay: 300 })
+  .move(-1)
+  .delete(2)
+  .type("Nex")
+  .move(null, { to: "END" })
+  .type(" Expense")
+  .pause(500)
+  .break({ delay: 500 })
+  .break({ delay: 500 })
+  .type("<em><h3>{{page.subtitle}}</h3></em>")
+  .go();
+</script>

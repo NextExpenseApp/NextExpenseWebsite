@@ -6,9 +6,9 @@
     <link rel="shortcut icon" type="image/png"
           {% if site.favicon %} href="{{ site.favicon | relative_url }}" {% else %} href="{{ site.baseurl }}/icon-36.png" {% endif %}
     />
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
-    {% unless site.hide_share_buttons %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />    {% unless site.hide_share_buttons %}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
     {% endunless %}
     {% seo %}
