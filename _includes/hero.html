@@ -6,13 +6,17 @@
     }
     
 }
+.hero.is-primary.is-bold {
+  background-image: linear-gradient(231deg, #102627 0%, #3b79ae 90%, #1686c8 100%);
+}
+
    
 </style>
 
 <section class="hero {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} is-bold is-primary" {% if page.hero_image %} style="background: url('{{ page.hero_image }}') no-repeat center center; background-size: cover;" {% endif %}>
     <div class="hero-body {% if page.hero_darken %} hero-darken {% endif %}">
         <div class="container hero-title">
-            <h1 class="title is-2" id="companionMethods"></h1>
+            <h1 class="title is-2" id="companion"></h1>
             {% if page.hero_link %}
                 <a href="{{ page.hero_link | relative_url }}" class="button is-info is-large">{{ page.hero_link_text }}</a>
             {% endif %}
@@ -24,7 +28,7 @@
 <script>
 
 
-new TypeIt("#companionMethods", {
+new TypeIt("#companion", {
   speed: 50,
   waitUntilVisible: true,
 })
