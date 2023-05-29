@@ -8,5 +8,5 @@ items:
     icon: fa-signal
   - title: Expense
     subtitle: Quick and easy to get started
-    icon: fa-money-bill-wave-alt
+    icon: fa-money
     icon_brand: true
