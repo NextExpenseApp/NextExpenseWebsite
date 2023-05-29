@@ -2,11 +2,11 @@ style: is-light
 items:
   - title: Scan
     subtitle: Including sidebar, menubar, tabs and callouts
-    icon: fa-scanner-touchscreen
+    icon: fa-search-location
   - title: Track
     subtitle: Layouts for blog and post pages included
-    icon:  fa-analytics
+    icon: fa-signal
   - title: Expense
     subtitle: Quick and easy to get started
-    icon: fa-comment-alt-dollar
+    icon: fa-money
     icon_brand: true
