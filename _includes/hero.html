@@ -31,7 +31,7 @@
 <section class="hero {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} is-bold is-primary" {% if page.hero_image %} style="background: url('{{ page.hero_image }}') no-repeat center center; background-size: cover;" {% endif %}>
     <div class="hero-body {% if page.hero_darken %} hero-darken {% endif %}">
         <div class="container hero-title">
-          <img class="android-hero" src="./img/CutPaste_2023-05-29_16-44-58-604.png" alt="android phone">
+          <img class="android-hero" src="{{site.baseurl}}/img/CutPaste_2023-05-29_16-44-58-604.png" alt="android phone">
             <h1 class="title is-2" id="companion"></h1>
             {% if page.hero_link %}
                 <a href="{{ page.hero_link | relative_url }}" class="button is-info is-large">{{ page.hero_link_text }}</a>
