@@ -1,8 +1,8 @@
 style: is-light
 items:
-  - title: Scan
+  - title: Capture
     subtitle: Including sidebar, menubar, tabs and callouts
-    icon: fa-fingerprint
+    icon: fa-camera
   - title: Track
     subtitle: Layouts for blog and post pages included
     icon: fa-signal
