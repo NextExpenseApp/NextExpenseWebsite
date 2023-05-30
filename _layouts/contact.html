@@ -51,7 +51,7 @@ layout: default
 }
 .content .left-side .details i {
   font-size: 30px;
-  color: #3e2093;
+  color: #31668F;
   margin-bottom: 10px;
 }
 .content .left-side .details .topic {
@@ -71,7 +71,7 @@ layout: default
 .content .right-side .topic-text {
   font-size: 23px;
   font-weight: 600;
-  color: #3e2093;
+  color: #31668F;
 }
 .right-side .input-box {
   height: 55px;
@@ -90,6 +90,9 @@ layout: default
   padding: 0 15px;
   resize: none;
 }
+input:focus, textarea:focus{
+  background-color: rgb(187, 224, 255) !important ;
+}
 .right-side .message-box {
   min-height: 110px;
 }
@@ -107,12 +110,12 @@ layout: default
   border: none;
   padding: 8px 16px;
   border-radius: 6px;
-  background: #3e2093;
+  background: #31668F;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .button-1 input[type="submit"]:hover {
-  background: #5029bc;
+  background: #65a3d2;
 }
 
 @media (max-width: 950px) {
@@ -159,20 +162,18 @@ layout: default
           <div class="address details">
             <i class="fas fa-map-marker-alt"></i>
             <div class="topic">Address</div>
-            <div class="text-one">Surkhet, NP12</div>
-            <div class="text-two">Birendranagar 06</div>
+            <div class="text-one">{{site.address-1}}</div>
+            <div class="text-two">{{site.address-2}}</div>
           </div>
           <div class="phone details">
             <i class="fas fa-phone-alt"></i>
             <div class="topic">Phone</div>
-            <div class="text-one">+0098 9893 5647</div>
-            <div class="text-two">+0096 3434 5678</div>
+            <div class="text-one">{{site.phone-number}}</div>
           </div>
           <div class="email details">
             <i class="fas fa-envelope"></i>
             <div class="topic">Email</div>
-            <div class="text-one">codinglab@gmail.com</div>
-            <div class="text-two">info.codinglab@gmail.com</div>
+            <div class="text-one">{{site.email}}</div>
           </div>
         </div>
         <div class="right-side">

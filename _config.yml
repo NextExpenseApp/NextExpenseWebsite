@@ -2,7 +2,6 @@
 lang: en
 title: 
 tagline: Bulma Clean Theme
-email: your-email@domain.com
 description: >
   The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites
 baseurl:
@@ -26,7 +25,10 @@ disqus:
   # shortname: my_disqus_shortname
   shortname: csrhymes
 
-
+email: elishadamu97@gmail.com
+phone-number: +234 7067206984
+address-1: Jos, Plateau State.
+address-2: Nigeria
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
