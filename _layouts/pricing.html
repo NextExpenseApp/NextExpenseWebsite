@@ -8,12 +8,24 @@ layout: default
     
 </div>
 <style>
+  @media screen and (max-width: 480px){
+    .pricing-plan{
+      display: flex;
+  flex-direction: column !important;
+  row-gap: 20px;
+  justify-content: center;
+  margin: 50px 0px 0px 30px !important;
+    }
+    .call-to-action-description{
+      margin-top: 50px;
+    }
+  }
   .btn-header{
     border: 0px solid white;
     width: 150px;
     height: 30px;
-    background-color: rgb(240, 197, 209);
-    color: brown;
+    background-color: #31668F;
+    color: rgb(255, 255, 255);
     border-radius: 3px;
     font-weight: bolder;
   }
@@ -28,7 +40,7 @@ layout: default
     column-gap: 0px;
     justify-content: center;
     margin-top: 20px;
-    border: 2px solid rgb(253, 52, 125);
+    border: 2px solid #31668F;
     width: 200px;
     border-radius: 8px;
   }
@@ -36,8 +48,8 @@ layout: default
     border-radius: 0px;
     width: 100px;
     height: 30px;
-    background-color: rgb(253, 52, 125);
-    border: 0px solid rgb(253, 52, 125);
+    background-color: #31668F;
+    border: 0px solid #31668F;
     cursor: pointer;
     border-bottom-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -47,7 +59,7 @@ layout: default
     width: 100px;
     height: 30px;
     background-color: rgb(255, 255, 255);
-    border: 0px solid rgb(253, 52, 125);
+    border: 0px solid #31668F;
     cursor: pointer;
     border-bottom-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -77,7 +89,7 @@ layout: default
   border-radius: 5px;
 }
 .pro-plan{
-  border: 2px solid rgb(255, 70, 128);
+  border: 2px solid #31668F;
 }
 li::marker{
   color: rgb(158, 157, 157);
