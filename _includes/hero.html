@@ -12,6 +12,11 @@
   margin-left: -45px !important;
   margin-top: -20px !important;
 }
+.is-3{
+  font-size: 15px !important;
+  margin-left: -48px !important;
+  margin-top: 0px !important;
+}
 }
 .hero-title{
   display: flex;
@@ -30,14 +35,25 @@
   margin-left: 50px;
   margin-top: 50px;
 }
-   
+.is-3{
+  margin-left: 45px;
+  margin-top: 30px;
+}
+  .hero-text{
+    display: flex;
+    flex-direction: column;
+
+  }
 </style>
 
 <section class="hero {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} is-bold is-primary" {% if page.hero_image %} style="background: url('{{ page.hero_image }}') no-repeat center center; background-size: cover;" {% endif %}>
     <div class="hero-body {% if page.hero_darken %} hero-darken {% endif %}">
         <div class="container hero-title">
           <img class="android-hero" src="{{site.baseurl}}/img/{{site.hero-img}}" alt="android phone">
-            <h1 class="title is-2" id="companion"></h1>
+          <div class="hero-text">
+            <h1 class="title is-2">{{page.title}}</h1>
+          <h1 class="title is-3" id="companion"></h1>
+          </div>
             {% if page.hero_link %}
                 <a href="{{ page.hero_link | relative_url }}" class="button is-info is-large">{{ page.hero_link_text }}</a>
             {% endif %}
@@ -53,15 +69,7 @@ new TypeIt("#companion", {
   speed: 50,
   waitUntilVisible: true,
 })
-  .type("Nxt", { delay: 300 })
-  .move(-1)
-  .delete(2)
-  .type("Nex")
-  .move(null, { to: "END" })
-  .type(" Expense")
-  .pause(500)
-  .break({ delay: 500 })
-  .break({ delay: 500 })
-  .type("<em>{{page.subtitle}}</em>")
+  
+  .type("<em> {{page.subtitle}}</em>")
   .go();
 </script>

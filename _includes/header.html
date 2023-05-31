@@ -4,12 +4,21 @@
         margin-left: 150px !important;
     }
 }
+.navbar-item img{
+    max-height: 60px !important;
+}
+.navbar-item {
+    font-size: 20px;
+}
+.is-active{
+    color: #{{site.background-color}} !important;
+}
 </style>
 <nav class="navbar  {% if site.fixed_navbar %} is-fixed-{{ site.fixed_navbar }} {% endif %}" x-data="{ openNav: false }">
     <div class="container">
         <div class="navbar-brand">
             <a href="{{ site.baseurl }}/" class="navbar-item">
-               <img src="{{site.baseurl}}/{{site.logo}}" alt="Logo">
+               <img class="header-logo" src="{{site.baseurl}}/{{site.logo}}" alt="Logo">
             </a>
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
                 <span aria-hidden="true"></span>
