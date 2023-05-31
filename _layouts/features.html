@@ -30,7 +30,7 @@ layout: default
     .featured-header{ 
         font-size:28px;
         font-weight: bolder;
-        text-decoration: underline;
+        margin-top: 50px;
     }
     .featured-content{
         display: flex;
@@ -54,18 +54,25 @@ layout: default
         flex-direction: row;
     }
     .fas{
-        font-size: 40px;
-        color: #{{site.background-color}};
+        font-size: 30px;
+        border-radius: 5px;
+        padding: 10px !important;
+        color: white;
+        background-color: #{{site.background-color}};
+        width: 50px;
+        height: 100%;
     }
     .icon-text{
         font-size: 20px;
         margin-left: 20px;
+        font-weight: bold;
         color: black !important ;
         font-family: sans-serif;
     }
     .featured-content-3, .featured-content-4{
-        margin-left: 40px;
-        margin-top: 20px;
+        margin-left: 70px;
+        margin-top: -10px;
+        text-align: left;
     }
     .call-to-action-flex{
     display: flex;
@@ -73,9 +80,7 @@ layout: default
     justify-content: center;
     column-gap: 20px;
 }
-.call-to-action-playstore{
-    
-}
+
 </style>
 <center>
     <h1 class="featured-header">What is Next Expense?</h1>
@@ -84,11 +89,11 @@ layout: default
         <div class="featured-content-1">
             <!-- First column first row -->
             <div class="featured-header-flex">
-                <i class="fas fa-file-invoice-dollar"><span class="icon-text">Receipt Scanner</span></i>
+                <i class="fas fa-file-invoice-dollar"></i><span class="icon-text">Receipt Scanner</span>
                
             </div>
 
-            <div class="featured-content-3">
+            <div class="featured-content-3 dollar">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum libero provident! Necessitatibus eum ullam labore blanditiis eveniet repellendus, tempora recusandae quas est?</p>
                
             </div>
@@ -96,9 +101,9 @@ layout: default
         <div class="featured-content-2">
              <!-- First column second row -->
             <div class="featured-header-flex">
-                <i class="fas fa-shield-alt"><span class="icon-text">Security</span></i>               
+                <i class="fas fa-shield-alt"></i><span class="icon-text">Security</span>               
             </div>
-            <div class="featured-content-4">
+            <div class="featured-content-4 shield">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum libero provident! Necessitatibus eum ullam labore blanditiis eveniet repellendus, tempora recusandae quas est?</p>
                
             </div>
@@ -109,9 +114,9 @@ layout: default
         <div class="featured-content-1">
              <!-- second column first row -->
             <div class="featured-header-flex">
-                <i class="fas fa-hand-holding-usd"><span class="icon-text">Expense Tracker</span></i>             
+                <i class="fas fa-hand-holding-usd"></i><span class="icon-text">Expense Tracker</span>         
             </div>
-            <div class="featured-content-3">
+            <div class="featured-content-3 usd">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum libero provident! Necessitatibus eum ullam labore blanditiis eveniet repellendus, tempora recusandae quas est?</p>
                
             </div>
@@ -119,9 +124,9 @@ layout: default
         <div class="featured-content-2">
              <!-- second column second row -->
             <div class="featured-header-flex">
-                <i class="fas fa-wrench"><span class="icon-text">Future Upgrade</span></i>               
+                <i class="fas fa-wrench"></i><span class="icon-text">Future Upgrade</span>             
             </div>
-            <div class="featured-content-4">
+            <div class="featured-content-4 wrench">
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum libero provident! Necessitatibus eum ullam labore blanditiis eveniet repellendus, tempora recusandae quas est?</p>
                
             </div>
@@ -132,9 +137,9 @@ layout: default
         <div class="featured-content-1">
              <!-- third column first row -->
             <div class="featured-header-flex">
-                <i class="fas fa-share-alt-square"><span class="icon-text">Report Sharing</span></i>               
+                <i class="fas fa-share-alt-square"></i><span class="icon-text">Report Sharing</span>              
             </div>
-            <div class="featured-content-3">
+            <div class="featured-content-3 square">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum libero provident! Necessitatibus eum ullam labore blanditiis eveniet repellendus, tempora recusandae quas est?</p>
                
             </div>
@@ -143,9 +148,9 @@ layout: default
         <div class="featured-content-2">
              <!-- First column second row -->
             <div class="featured-header-flex">
-                <i class="fas fa-user-cog"><span class="icon-text">Easy to use</span></i>            
+                <i class="fas fa-user-cog"></i><span class="icon-text">Easy to use</span>            
             </div>
-            <div class="featured-content-4">
+            <div class="featured-content-4 cog">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum libero provident! Necessitatibus eum ullam labore blanditiis eveniet repellendus, tempora recusandae quas est?</p>
                
             </div>
