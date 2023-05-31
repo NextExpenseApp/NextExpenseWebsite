@@ -168,9 +168,34 @@ layout: default
     <br>
     <div class="call-to-action-flex">
         <a href="#"> <img class="call-to-action-appstore" src="{{site.baseurl}}/img/aivalable-on-the-app-store-2.svg" alt=""></a>        
+        
         <a href="#"><img class="call-to-action-playstore" src="{{site.baseurl}}/img/Google_Play-Badge-Logo.wine.svg" alt=""></a>    
     </div>
-
+  
         </div>
     </section>
-</center>
+  
+  </center>
+  <script>
+  
+  
+  $(function() {
+      $('.call-to-action-appstore').click(function(e) {
+          e.preventDefault();
+          
+          Swal.fire({
+    icon: 'error',
+    title: 'Oops...',
+    text: 'This app is currently  unavailable on IOs',
+  
+  })
+  
+         
+      });
+      
+      $(document).on('click', '#some-action', function(e) {
+          e.preventDefault();
+          
+      });
+  });
+  </script>
