@@ -36,6 +36,7 @@
 }
 .call-to-action-description{
     font-size: 26px;
+    text-align: center;
 }
 
 .btn-primary {
@@ -59,8 +60,9 @@
 .call-to-action-flex{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    column-gap: 20px;
     justify-content: center;
+    margin-left: 5px;
 }
 .call-to-action-playstore{
     margin-top: 0px;
@@ -124,27 +126,23 @@
                         <br>
                         <br>
                         <a href="{{site.baseurl}}/features/"> <button class="btn btn-primary call-to-action-button" style="font-size: 17px;">Learn more<span style="font-size: 15px !important; margin-left: 20px;">    >></span></button></a> 
-                    </center>
                 </div>
             </div>
             <br>
             <br>
             <br>
             <br>
-
-<center>
-    
-    <h3 class="call-to-action-description">Available for Android devices</h3>
-    <br>
-    <div class="call-to-action-flex">
-        <a href="#"> <img class="call-to-action-appstore" src="{{site.baseurl}}/img/aivalable-on-the-app-store-2.svg" alt=""></a>        
-        
-        <a href="#"><img class="call-to-action-playstore" src="{{site.baseurl}}/img/Google_Play-Badge-Logo.wine.svg" alt=""></a>    
-    </div>
-  
-        </div>
-    </section>
-    {% endif %}
+            <h3 class="call-to-action-description">Available for Android devices</h3>
+            <br>
+            <div class="call-to-action-flex">
+                <a href="#"> <img class="call-to-action-appstore" src="{{site.baseurl}}/img/aivalable-on-the-app-store-2.svg" alt=""></a>        
+                
+                <a href="#"><img class="call-to-action-playstore" src="{{site.baseurl}}/img/Google_Play-Badge-Logo.wine.svg" alt=""></a>    
+            </div>
+          
+                </div>
+            </section>
+            {% endif %}
   </center>
   <script>
   
