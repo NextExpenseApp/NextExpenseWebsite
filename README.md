@@ -1,3 +1,3 @@
 This is an application website:
 
-https://nextexpense.ca
+https://www.nextexpense.ca
