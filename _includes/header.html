@@ -20,6 +20,16 @@
 .navbar-item {
     font-size: 20px;
 }
+.navbar-burger{
+    padding-top: 20px !important;
+    font-size: 0px !;
+    position: absolute;
+    margin-left: 200px;
+}
+.navbar-burger-1{
+    font-size: 10px !important;
+
+}
 .is-active{
     color: #{{site.background-color}} !important;
 }
@@ -31,9 +41,9 @@
                <img class="header-logo" src="{{site.baseurl}}/{{site.logo}}" alt="Logo">
             </a>
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
+                <span class="navbar-burger-1" aria-hidden="true"></span>
+                <span class="navbar-burger-1" aria-hidden="true"></span>
+                <span class="navbar-burger-1" aria-hidden="true"></span>
             </a>
         </div>
         <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
