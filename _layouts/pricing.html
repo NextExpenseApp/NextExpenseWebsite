@@ -97,13 +97,16 @@ layout: default
   margin: 70px 0px 50px 0px;
 }
 .start-plan, .pro-plan, .business-plan{
+  overflow: hidden;
   width: 300px;
   height: 320px;
   border: 1px solid grey;
   border-radius: 5px
 }
-.pro-plan{
+
+.pro-plan {
   border: 2px solid #{{site.background-color}};
+  
 }
 li::marker{
   color: rgb(158, 157, 157);
@@ -115,7 +118,8 @@ li{
   font-size: 14px !important;
 }
 .plan-list{
-  padding-left: -100px !important;
+  padding-left: 65px !important;
+  text-align: left;
 }
 
 .buttom-text{
@@ -149,6 +153,19 @@ li{
   padding-top: 2px;
   font-size: 13px;
 }
+li::marker{
+  content: "⚫  ";
+  font-size: 10px;
+  padding-left: 20px;
+}
+ul {
+  margin-left: -36px;
+  list-style: inside !important;
+    list-style-position: inside;
+    list-style-image: none;
+    list-style-type: disc;
+}
+
 </style>
 <center>
 
@@ -166,9 +183,11 @@ li{
     <br>
       <div class="plan-list">
         
+          <ul>
+            <li>Lorem ipsum dolor, sit amet  </li>
           <li>Lorem ipsum dolor, sit amet  </li>
           <li>Lorem ipsum dolor, sit amet  </li>
-          <li>Lorem ipsum dolor, sit amet  </li>
+          </ul>
         
       </div>
 
@@ -185,10 +204,12 @@ li{
     <br>
     <div class="plan-list">
         
+      <ul>
+        <li>Lorem ipsum dolor, sit amet  </li>
       <li>Lorem ipsum dolor, sit amet  </li>
       <li>Lorem ipsum dolor, sit amet  </li>
       <li>Lorem ipsum dolor, sit amet  </li>
-      <li>Lorem ipsum dolor, sit amet  </li>
+      </ul>
     
   </div>
     
