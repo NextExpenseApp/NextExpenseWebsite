@@ -8,27 +8,58 @@
 .navbar-item {
     font-size: 17px !important;
 }
+.navbar-burger{
+    position: absolute;
+    margin-left: 355px !important;
 }
-@media screen and (min-width: 480px) {
-        .navbar-menu{
-        margin-left: 150px !important;
-    }
+.navbar-burger span {
+  background-color: currentColor;
+  display: block;
+  height: 3px;
+  color: #31668F;
+  left: calc(50% - 8px);
+  position: absolute;
+  transform-origin: center;
+  transition-duration: 86ms;
+  transition-property: background-color, opacity, transform;
+  transition-timing-function: ease-out;
+  width: 35px;
 }
+.navbar-burger span:nth-child(1) {
+  top: calc(50% - 8px);
+}
+
+.navbar-burger span:nth-child(2) {
+  top: calc(50% - 1px);
+}
+
+.navbar-burger span:nth-child(3) {
+  top: calc(50% + 6px);
+}
+
+.navbar-burger:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.navbar-burger.is-active span:nth-child(1) {
+  transform: translateY(15px) rotate(45deg);
+}
+
+.navbar-burger.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-burger.is-active span:nth-child(3) {
+  transform: translateY(1.5px) rotate(-45deg);
+}
+
+}
+
 .navbar-item img{
-    max-height: 60px;
+    max-height: 40px !important;
 }
 .navbar-item {
     font-size: 20px;
-}
-.navbar-burger{
-    padding-top: 20px !important;
-    font-size: 0px !;
-    position: absolute;
-    margin-left: 200px;
-}
-.navbar-burger-1{
-    font-size: 10px !important;
-
 }
 .is-active{
     color: #{{site.background-color}} !important;
