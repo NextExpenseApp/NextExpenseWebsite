@@ -10,5 +10,4 @@ http://nextexpense.ca
 
 4. Change the favicon in the head.html file under the _include folder. The favicon code is in line 6 of the file.
 
-5. 
 
