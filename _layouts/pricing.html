@@ -23,6 +23,9 @@ layout: default
     font-size: 30px;
     font-weight: bolder;
   }
+  .pricing-description{
+    padding: 0px 67px 0px 67px !important;
+  }
     .call-to-action-description{
       margin-top: 50px;
     }
@@ -85,8 +88,7 @@ layout: default
     justify-content: center;
     column-gap: 20px;
 }
-.call-to-action-playstore{
-}
+
 .pricing-plan{
   display: flex;
   flex-direction: row;
@@ -172,17 +174,21 @@ ul {
 
   <h1 class="price-header">Change your plan</h1>
 <br>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
+<!-- Pricing description-->
+  <p class="pricing-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
 
-
+<!--Container of the 3 boxes-->
 <div class="pricing-plan">
+  <!-- 1st box container-->
   <div class="start-plan">
     <p style="margin-left: -190px !important; margin-top: 30px; font-size: 13px; font-weight: bold;">Start</p>
     <p style="margin-left: -155px !important; padding-top: 10px; font-size: 30px; font-weight: bolder;">Free</p>
     <hr style="margin:5px 40px 0px 40px;">
     <br>
       <div class="plan-list">
-        
+        <!--padding of buttom-text was set to 3 lists, if the list is increased to 4 the buttom-text
+        padding top should be reduced.  75px is the padding-top
+        -->
           <ul>
             <li>Lorem ipsum dolor, sit amet  </li>
           <li>Lorem ipsum dolor, sit amet  </li>
@@ -203,7 +209,9 @@ ul {
     <hr style="margin:5px 40px 0px 40px;">
     <br>
     <div class="plan-list">
-        
+         <!--padding of buttom-text-1 was set to 4 lists, if the list is increased to 5 the buttom-text
+        padding top should be reduced.  75px is the padding-top 52.5px
+         -->
       <ul>
         <li>Lorem ipsum dolor, sit amet  </li>
       <li>Lorem ipsum dolor, sit amet  </li>
@@ -223,6 +231,9 @@ ul {
     <br>
       
     <div class="plan-list">
+       <!--padding of buttom-text-2 was set to 5 lists, if the list is increased to 6 the buttom-text
+        padding top should be reduced.  30.5px is the padding-top
+       -->
       <ul>
         <li>Lorem ipsum dolor, sit amet  </li> 
       <li>Lorem ipsum dolor, sit amet  </li>
@@ -238,12 +249,13 @@ ul {
 </center>
 
 <center>
-    
+    <!-- Call to action section-->
   <h3 class="call-to-action-description">Available for Android devices</h3>
   <br>
+  <!-- Call to action, Iphone button-->
   <div class="call-to-action-flex">
       <a href="#"> <img class="call-to-action-appstore" src="{{site.baseurl}}/img/aivalable-on-the-app-store-2.svg" alt=""></a>        
-      
+      <!-- Call to action, google play store button-->
       <a href="https://play.google.com/store/apps/details?id=com.flowdevelopers.nextexpense&hl=en&gl=US"><img class="call-to-action-playstore" src="{{site.baseurl}}/img/Google_Play-Badge-Logo.wine.svg" alt=""></a>    
   </div>
 

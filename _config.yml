@@ -2,34 +2,28 @@
 lang: en
 title: 
 tagline: Bulma Clean Theme
-description: >
+description: > # you can add a website description 
   The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites
 baseurl:
 url:
 permalink: pretty
-logo: Icon-512.png
-#favicon: /path/to/favicon.png
-gh_sponsor: chrisrhymes
-#hide_share_buttons: true
-#theme_color: '#eeeeee'
-#fixed_navbar: top
-#direction: one of <ltr, rtl, auto>, default: ltr
+
+logo: Icon-512.png # The image file can be set by placing the image in the main repository
+
 
 background-color: 31668F
 
 paginate: 5
 paginate_path: "/blog/page:num"
 
-# Disqus Comments
-disqus:
-  # Leave shortname blank to disable comments site-wide.
-  # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
-  # shortname: my_disqus_shortname
-  shortname: csrhymes
-
+# place image in the "img" folder of the repository
 hero-img: CutPaste_2023-05-29_16-44-58-604.png
+#change email from here
 email: elishadamu97@gmail.com
+#change phone number from here
 phone-number: +234 7067206984
+
+#change address from here
 address-1: Jos, Plateau State.
 address-2: Nigeria
 plugins:
