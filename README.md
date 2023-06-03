@@ -1,6 +1,6 @@
 This is an application website:
 
-https://www.nextexpense.ca
+http://nextexpense.ca
 
 1. Change the call to action icons in the folder data/example_callouts.yml
 
