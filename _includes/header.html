@@ -1,6 +1,10 @@
 
 <style>
     @media screen and (max-width: 480px)   {
+      .header-logo{
+    max-height:40px !important;
+    margin-right:200px;
+  }
       .navbar-burger {
   color: #4a4a4a;
   -moz-appearance: none;
@@ -19,14 +23,15 @@
 .navbar-burger span {
   background-color: currentColor;
   display: block;
-  height: 1px;
+  height: 3px;
+  color:  #{{site.background-color}} !important;
   left: calc(50% - 8px);
   position: absolute;
   transform-origin: center;
   transition-duration: 86ms;
   transition-property: background-color, opacity, transform;
   transition-timing-function: ease-out;
-  width: 16px;
+  width: 25px;
 }
 
 .navbar-burger span:nth-child(1) {
@@ -57,8 +62,12 @@
   transform: translateY(-5px) rotate(-45deg);
 }
 
-  }
+}
   @media screen and (max-width: 450px) {
+    .header-logo{
+    max-height: 40px !important;
+    margin-right:200px ;
+  }
     .navbar-burger {
   color: #4a4a4a;
   -moz-appearance: none;
@@ -78,6 +87,7 @@
   background-color: currentColor;
   display: block;
   height: 3px;
+  color:  #{{site.background-color}} !important;
   left: calc(50% - 8px);
   position: absolute;
   transform-origin: center;
@@ -115,6 +125,11 @@
   transform: translateY(-5px) rotate(-45deg);
 }
   }
+  .header-logo{
+    max-height: 45px !important;
+    margin-right:200px ;
+  }
+
 </style>
 
 <nav class="navbar  {% if site.fixed_navbar %} is-fixed-{{ site.fixed_navbar }} {% endif %}" x-data="{ openNav: false }">
