@@ -1,12 +1,12 @@
 style: is-light
 items:
   - title: Capture
-    subtitle: Including sidebar, menubar, tabs and callouts
+    subtitle: Capture receipts instantly
     icon: fa-camera
   - title: Track
-    subtitle: Layouts for blog and post pages included
+    subtitle: Track your expense history
     icon: fa-signal
   - title: Expense
-    subtitle: Quick and easy to get started
+    subtitle: Expense receipts with ease
     icon: fa-money
     icon_brand: true
