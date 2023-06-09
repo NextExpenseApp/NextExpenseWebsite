@@ -3,7 +3,7 @@ lang: en
 title: 
 tagline: Bulma Clean Theme
 description: > # you can add a website description 
-  The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites
+  Next Expense Website
 baseurl:
 url:
 permalink: pretty
@@ -19,13 +19,13 @@ paginate_path: "/blog/page:num"
 # place image in the "img" folder of the repository
 hero-img: CutPaste_2023-05-29_16-44-58-604.png
 #change email from here
-email: elishadamu97@gmail.com
+email: contact@nextexpense.ca
 #change phone number from here
-phone-number: +234 7067206984
+phone-number: +1 1111111
 
 #change address from here
-address-1: Jos, Plateau State.
-address-2: Nigeria
+address-1: 33 City Centre Dr.
+address-2: Mississauga ON, Canada
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
