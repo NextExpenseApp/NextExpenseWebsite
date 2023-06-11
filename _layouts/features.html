@@ -5,99 +5,120 @@ layout: default
 {{ content }}
 
 <div class="columns is-multiline">
-    
+
 </div>
 <style>
     @import url("/assets/css/features.css");
+
     @media screen and (max-width: 480px) {
-        .featured-content{
-        display: flex;
-        flex-direction: column !important;
-        justify-content: center;
-        margin-top: 50px;
-        margin-left: 10px;
+        .featured-content {
+            display: flex;
+            flex-direction: column !important;
+            justify-content: center;
+            margin-top: 50px;
+            margin-left: 10px;
+        }
+
+        .fas {
+            margin-top: 30px;
+        }
+
+        .call-to-action-description {
+            font-size: 20px;
+        }
+
+        .featured-header {
+            text-decoration: none !important;
+            font-size: 20px;
+        }
+
+        .icon-text {
+            font-size: 20px;
+            margin-left: 20px;
+            font-weight: bold;
+            margin-top: 30px;
+            color: black !important;
+            font-family: sans-serif;
+        }
+
+        .featured-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 80px;
+            margin: 30px 20px 0px 20px !important;
+        }
     }
-    .fas{
-        margin-top: 30px;
-    }
-    .call-to-action-description{
-        font-size: 20px;
-    }
-    .featured-header{
-        text-decoration: none !important;
-        font-size: 20px;
-    }
-    .icon-text{
-        font-size: 20px;
-        margin-left: 20px;
-        font-weight: bold;
-        margin-top: 30px;
-        color: black !important ;
-        font-family: sans-serif;
-    }
-    .featured-content{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        column-gap: 80px;
-        margin: 30px 20px 0px 20px !important;
-    }
-    }
-    .featured-header{ 
-        font-size:28px;
+
+    .featured-header {
+        font-size: 28px;
         font-weight: bolder;
         margin-top: 80px;
     }
-    .featured-content{
+
+    .featured-content {
         display: flex;
         flex-direction: row;
         justify-content: center;
         column-gap: 80px;
         margin-top: 60px;
     }
-    .featured-content-1, .featured-content-2{
+
+    .featured-content-1,
+    .featured-content-2 {
         display: flex;
         flex-direction: column;
     }
-    .featured-content-3, .featured-content-4{
+
+    .featured-content-3,
+    .featured-content-4 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .featured-header-flex{
+    .featured-header-flex {
         display: flex;
         flex-direction: row;
     }
-    .fas{
+
+    .fas {
         font-size: 30px;
         border-radius: 5px;
         padding: 10px !important;
         color: white;
-        background-color: #{{site.background-color}};
-        width: 50px;
-        height: 100%;
+        background-color: #{{site.background-color}
     }
-    .icon-text{
+
+    ;
+    width: 50px;
+    height: 100%;
+    }
+
+    .icon-text {
         font-size: 20px;
         margin-left: 20px;
         font-weight: bold;
-        color: black !important ;
+        color: black !important;
         font-family: sans-serif;
     }
-    .featured-content-3, .featured-content-4{
+
+    .featured-content-3,
+    .featured-content-4 {
         margin-left: 70px;
         margin-top: -10px;
         text-align: left;
     }
-    .call-to-action-flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    column-gap: 20px;
-    margin-bottom: 50px;
-}
-.call-to-action-description{
+
+    .call-to-action-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    .call-to-action-description {
         margin-top: -45px !important;
     }
 </style>
@@ -105,83 +126,83 @@ layout: default
     <!-- <h1 class="featured-header">What is Next Expense?</h1>  -->
     <!-- First column -->
     <div class="featured-content">
+
         <div class="featured-content-1">
             <!-- First column first row -->
             <div class="featured-header-flex">
                 <i class="fas fa-file-invoice-dollar"></i><span class="icon-text">Receipt Scanner</span>
-               
+
             </div>
 
             <div class="featured-content-3 dollar">
-                <p>Easily capture and digitize your receipts with our high accuracy scanner to save you time. </p>
-               
+                <p>Capture and digitize your receipts instantly to save you time. </p>
+
             </div>
         </div>
-        
+
         <div class="featured-content-1">
             <!-- second column first row -->
-           <div class="featured-header-flex">
-               <i class="fas fa-hand-holding-usd"></i><span class="icon-text">Expense Tracker</span>         
-           </div>
-           <div class="featured-content-3 usd">
-               <p>Stay organized and in control of your expenses with our practical and easy-to-use interface.</p>
-              
-           </div>
-       </div>
+            <div class="featured-header-flex">
+                <i class="fas fa-hand-holding-usd"></i><span class="icon-text">Expense Tracker</span>
+            </div>
+            <div class="featured-content-3 usd">
+                <p>Stay organized and in control with detailed breakdowns of your expenses.</p>
+
+            </div>
+        </div>
     </div>
     <!-- Second column -->
     <div class="featured-content">
-        
-        
-       <div class="featured-content-1">
-        <!-- third column first row -->
-       <div class="featured-header-flex">
-           <i class="fas fa-share-alt-square"></i><span class="icon-text">Report Sharing</span>              
-       </div>
-       <div class="featured-content-3 square">
-           <p>Easily create customized reports and share them with relevant people in just a few clicks.
-           </p>
-          
-       </div>
-   </div>
 
-        
+
+        <div class="featured-content-1">
+            <!-- third column first row -->
+            <div class="featured-header-flex">
+                <i class="fas fa-share-alt-square"></i><span class="icon-text">Report Sharing</span>
+            </div>
+            <div class="featured-content-3 square">
+                <p>Build custom expense reports to share with relevant people.</p>
+
+            </div>
+        </div>
+
+
         <div class="featured-content-2">
             <!-- First column second row -->
-           <div class="featured-header-flex">
-               <i class="fas fa-user-cog"></i><span class="icon-text">Easy of use</span>            
-           </div>
-           <div class="featured-content-4 cog">
-               <p>Seamlessly navigate and effortlessly manage expenses with our user-friendly interface.</p>
-              
-           </div>
-       </div>
+            <div class="featured-header-flex">
+                <i class="fas fa-user-cog"></i><span class="icon-text">User-Friendly</span>
+            </div>
+            <div class="featured-content-4 cog">
+                <p>Manage everything through a user-friendly interface in just a few clicks.</p>
+
+            </div>
+        </div>
     </div>
     <!-- Third column -->
     <div class="featured-content">
-        
+
         <div class="featured-content-2">
             <!-- First column second row -->
-           <div class="featured-header-flex">
-               <i class="fas fa-shield-alt"></i><span class="icon-text">Security</span>               
-           </div>
-           <div class="featured-content-4 shield">
-               <p>Rest easy knowing all your expense details and receipts are kept confidential and secure from third parties.</p>
-              
-           </div>
-       </div>
-        
-       <div class="featured-content-2">
-        <!-- second column second row -->
-       <div class="featured-header-flex">
-           <i class="fas fa-wrench"></i><span class="icon-text">Future Upgrades</span>             
-       </div>
-       <div class="featured-content-4 wrench">
-          <p>At Next Expense, we strive for excellence and are constantly working on making improvements and developing new features. Stay tuned for updates and additions.</p>
-          
-       </div>
-   </div>
-        
+            <div class="featured-header-flex">
+                <i class="fas fa-shield-alt"></i><span class="icon-text">Security</span>
+            </div>
+            <div class="featured-content-4 shield">
+                <p>All of your data is kept confidential and secure from third parties.</p>
+
+            </div>
+        </div>
+
+        <div class="featured-content-2">
+            <!-- second column second row -->
+            <div class="featured-header-flex">
+                <i class="fas fa-wrench"></i><span class="icon-text">New Developments</span>
+            </div>
+            <div class="featured-content-4 wrench">
+                <p>Exciting new features currently under development. Stay tuned.</p>
+
+            </div>
+        </div>
+
     </div>
 </center>
 <br>
@@ -190,39 +211,41 @@ layout: default
 <br>
 
 <center>
-    
+
     <h3 class="call-to-action-description">Download now for mobile devices!</h3>
     <br>
     <div class="call-to-action-flex">
-        <a href="#"> <img class="call-to-action-appstore" src="{{site.baseurl}}/img/aivalable-on-the-app-store-2.svg" alt=""></a>        
-        
-        <a href="https://play.google.com/store/apps/details?id=com.flowdevelopers.nextexpense&hl=en&gl=US"><img class="call-to-action-playstore" src="{{site.baseurl}}/img/Google_Play-Badge-Logo.wine.svg" alt=""></a>    
+        <a href="#"> <img class="call-to-action-appstore" src="{{site.baseurl}}/img/aivalable-on-the-app-store-2.svg"
+                alt=""></a>
+
+        <a href="https://play.google.com/store/apps/details?id=com.flowdevelopers.nextexpense&hl=en&gl=US"><img
+                class="call-to-action-playstore" src="{{site.baseurl}}/img/Google_Play-Badge-Logo.wine.svg" alt=""></a>
     </div>
-  
-        </div>
+
+    </div>
     </section>
-  
-  </center>
-  <script>
-  
-  
-  $(function() {
-      $('.call-to-action-appstore').click(function(e) {
-          e.preventDefault();
-          
-          Swal.fire({
-    icon: 'error',
-    title: 'Oops...',
-    text: 'This app is currently  unavailable on IOs',
-  
-  })
-  
-         
-      });
-      
-      $(document).on('click', '#some-action', function(e) {
-          e.preventDefault();
-          
-      });
-  });
-  </script>
+
+</center>
+<script>
+
+
+    $(function () {
+        $('.call-to-action-appstore').click(function (e) {
+            e.preventDefault();
+
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'This app is currently  unavailable on IOs',
+
+            })
+
+
+        });
+
+        $(document).on('click', '#some-action', function (e) {
+            e.preventDefault();
+
+        });
+    });
+</script>
