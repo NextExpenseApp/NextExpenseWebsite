@@ -1,12 +1,12 @@
 style: is-light
 items:
   - title: Capture
-    subtitle: Capture receipts instantly
+    subtitle: Capture receipt details instantly
     icon: fa-camera
   - title: Track
-    subtitle: Track your expense history
+    subtitle: Track spending effortlessly
     icon: fa-signal
-  - title: Expense
-    subtitle: Expense receipts with ease
+  - title: Submit
+    subtitle: Submit reports on-the-go
     icon: fa-money
     icon_brand: true
