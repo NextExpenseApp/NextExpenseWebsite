@@ -121,14 +121,14 @@ layout: default
     font-size: 14px !important;
   }
   .plan-list{
-    padding-left: 65px !important;
+    /* padding-left: 65px !important; */
     text-align: left;
   }
   
   .buttom-text{
     font-size: 10px;
     text-align: left;
-    padding: 75px 20px 0px 20px;
+    padding: 75px 20px 0px 0px;
     font-weight: bold;
   }
   .buttom-text-1{
@@ -144,7 +144,7 @@ layout: default
     font-weight: bold;
   }
   .div-popular{
-    margin-left: 198px;
+    margin-left: 178px;
     border-bottom-left-radius: 5px;
     background-color: #{{site.background-color}};
     width: 100px;
@@ -161,13 +161,19 @@ layout: default
     font-size: 8px;
   }
   ul {
-    margin-left: -36px;
+    /* margin-left: -36px; */
     list-style: inside !important;
       list-style-position: inside;
       list-style-image: none;
       list-style-type: disc;
   }
-  
+  /* mseriesco */
+  .text-left {
+    text-align: left;
+  }
+  .start-plan, .business-plan, .pro-plan {
+    padding-left: 20px;
+  }
   </style>
   
  
@@ -183,8 +189,8 @@ layout: default
   <div class="pricing-plan">
     <!-- 1st box container-->
     <div class="start-plan">
-      <p style="margin-left: -200px !important; margin-top: 30px; font-size: 13px; font-weight: bold;">Starter</p>
-      <p style="margin-left: -185px !important; padding-top: 10px; font-size: 30px; font-weight: bolder; position: relative;">Free</p>
+      <p class="text-left" style="margin-top: 30px; font-size: 13px; font-weight: bold;">Starter</p>
+      <p class="text-left" style="padding-top: 10px; font-size: 30px; font-weight: bolder;">Free</p>
       <hr style="margin:5px 40px 0px 40px;">
       <br>
       <div class="plan-list">
@@ -203,11 +209,11 @@ layout: default
     </div>
 
     <div class="business-plan">
-      <p style="margin-left: -200px !important; margin-top: 30px; font-size: 13px; font-weight: bold;">Monthly</p>
-      <p
-        style="margin-left: -185px !important; padding-top: 10px; font-size: 30px; font-weight: bolder; position: relative;">
+      <p class="text-left" style="margin-top: 30px; font-size: 13px; font-weight: bold;">Monthly</p>
+      <p class="text-left"
+        style="padding-top: 10px; font-size: 30px; font-weight: bolder;">
         $2 <span
-          style="font-size: 15px; font-weight: lighter; padding: 12px 0px 5px 7px !important; position: absolute;">/month</span>
+          style="font-size: 15px; font-weight: lighter; padding: 12px 0px 5px 7px !important;">/month</span>
       </p>
       <hr style="margin:5px 40px 0px 40px;">
       <br>
@@ -230,11 +236,11 @@ layout: default
       <div class="div-popular">
         <p class="popular">POPULAR</p>
       </div>
-      <p style="margin-left: -200px !important; margin-top: 5px; font-size: 13px; font-weight: bold;">Yearly</p>
-      <p
-        style="margin-left: -185px !important; padding-top: 10px; font-size: 30px; font-weight: bolder; position: relative;">
+      <p class="text-left" style="margin-top: 5px; font-size: 13px; font-weight: bold;">Yearly</p>
+      <p class="text-left"
+        style="padding-top: 10px; font-size: 30px; font-weight: bolder;">
         $1 <span
-          style="font-size: 15px; font-weight: lighter; margin: 12px 0px 5px 10px !important; position: absolute;">/month
+          style="font-size: 15px; font-weight: lighter; margin: 12px 0px 5px 10px !important;">/month
           billed annually</span></p>
       <hr style="margin:5px 40px 0px 40px;">
       <br>
