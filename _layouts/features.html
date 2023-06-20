@@ -68,6 +68,7 @@ layout: default
          display: flex;
         flex-direction: column;
         flex: 50%;
+        text-align: left;
     }
     .featured-content-2 {
         display: flex;
@@ -97,6 +98,12 @@ layout: default
         font-family: sans-serif;
     }
 
+    .featured-content-3-dollar{
+        margin-left: 20px;
+        /* text-align: left;
+        position: relative; */
+    }
+
     .featured-content-3,
     .featured-content-4 {
         margin-left: 70px;
@@ -124,13 +131,18 @@ layout: default
         <div class="featured-content-1">
             <!-- First column first row -->
             <div class="featured-header-flex">
-                <i class="fas fa-file-invoice-dollar"></i><span class="icon-text">Receipt Scanner</span>
+                <i class="fas fa-file-invoice-dollar"></i>
+                <span class="icon-text">Receipt Scanner</span> <br>
+                <!-- <span class="featured-content-3-dollar">Captures receipt details instantly to save you time.</span> -->
+                
+                <!-- <div class="featured-content-3-dollar">
+                <p>Captures receipt details instantly to save you time.!</p>
+                </div> -->
 
             </div>
 
-            <div class="featured-content-3 dollar">
-                <p>Captures receipt details instantly to save you time. </p>
-
+            <div class="featured-content-3-dollar">
+                <p>Captures receipt details instantly to save you time.</p>
             </div>
         </div>
 
