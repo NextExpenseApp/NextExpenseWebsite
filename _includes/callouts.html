@@ -31,10 +31,17 @@
     padding-bottom: 0px !important;
 }
 .call-to-action-flex{
-    display: flex !important;
+    /* display: flex !important;
     flex-direction: column !important;
     gap: 20px !important;
-    padding-left: -17px !important;
+    padding-left: -17px !important; */
+
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      column-gap: 20px;
+      justify-content: center;
+      margin-bottom: 50px !important;
 }
 .call-to-action-playstore{
     margin-top: -15px  !important;
@@ -120,6 +127,20 @@
 .is-12{
     padding: 0px;
 }
+.callout-icon {
+    margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+    .subtitle {
+        margin-bottom: 20px;
+    }
+    .hero.is-medium .hero-body {
+        padding: 5rem 3rem !important;
+    }
+    .hero-text {
+        padding-left: 1.5rem;
+    }
+}
 </style>
 
 {% if page.callouts %}
@@ -189,8 +210,8 @@
           
           Swal.fire({
     icon: 'error',
-    title: 'Under Development...',
-    text: 'This app is temporarily unavailable on IOs. For more information on the IOs release date please head over to our contact page and leave us a message',
+    title: 'Oops...',
+    text: 'App currently under development for IOs. For more information, please contact us.',
   
   })
   
