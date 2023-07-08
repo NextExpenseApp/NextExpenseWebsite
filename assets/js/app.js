@@ -1,6 +1,15 @@
-// Show Currency Selector on Price Page
 $(document).ready(function() {
+    // Handle mobile image only on home page
+    let homeUrl = window.location.origin + "/";
     let currentUrl = window.location.origin + window.location.pathname;
+    console.log(currentUrl);
+    if(currentUrl === homeUrl) {
+        console.log(window.innerWidth <= 480);
+        $(".mobile-image").css("display", "block");
+    }
+
+    
+    // Show Currency Selector on Price Page
     let pricingUrl = window.location.origin + "/pricing/";
     
     if(currentUrl === pricingUrl) {
