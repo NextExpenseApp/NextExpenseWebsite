@@ -43,12 +43,29 @@
     display: flex;
     flex-direction: column;
   }
+@media screen and (max-width: 480px) {
+  .android-hero{
+    display: none;
+    margin-left: 0;
+  }
+  .hero-title {
+    flex-direction: column-reverse;
+  }
+  .is-2 {
+    margin-top: 50px !important;
+  }
+  .mobile-image {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 220px;
+  }
+}
 </style>
 
 <section class="hero {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} is-bold is-primary" {% if page.hero_image %} style="background: url('{{ page.hero_image }}') no-repeat center center; background-size: cover;" {% endif %}>
     <div class="hero-body {% if page.hero_darken %} hero-darken {% endif %}">
         <div class="container hero-title">
-          <img class="android-hero" src="{{site.baseurl}}/img/{{site.hero-img}}" alt="android phone">
+          <img class="android-hero mobile-image" src="{{site.baseurl}}/img/{{site.hero-img}}" alt="android phone">
           <div class="hero-text">
             <h1 class="title is-2">{{page.title}}</h1>
           <h1 class="title is-3" id="companion"></h1>

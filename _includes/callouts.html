@@ -137,11 +137,17 @@
         margin-bottom: 20px;
     }
     .hero.is-medium .hero-body {
-        padding: 5rem 3rem !important;
+        padding-top: 0 !important;
+        padding-bottom: 5rem !important;
+        padding-right: 3rem !important;
+        padding-left: 3rem !important;
     }
     .hero-text {
         padding-left: 1.5rem;
     }
+}
+.hero-line {
+    padding-bottom: 50px;
 }
 </style>
 
@@ -149,6 +155,9 @@
     {% assign callouts=site.data.[page.callouts] %}
     <section class="hero {% if callouts.height %} {{ callouts.height }} {% else %} is-medium {% endif %} {{ callouts.style }}">
         <div class="hero-body">
+            <center>
+                <h3 class="hero-line call-to-action-description">Add text line here Add text line here</h3>
+            </center>
             <div class="container">
                 <div class="columns is-multiline is-centered">
                     {% for callout in callouts.items %}
@@ -183,7 +192,8 @@
                     <center>
                         <br>
                         <br> 
-                        <a href="{{site.baseurl}}/features/"> <button class="btn btn-primary call-to-action-button" style="font-size: 17px;">Learn more<span style="font-size: 15px !important; margin-left: 20px;">    >></span></button></a> 
+                        <!-- <a href="{{site.baseurl}}/features/"> <button class="btn btn-primary call-to-action-button" style="font-size: 17px; background-color: #31668F; color: #fff;">Learn more</button></a>  -->
+                        <a class="btn btn-primary call-to-action-button" href="{{site.baseurl}}/features/" style="font-size: 17px; background-color: #31668F; color: #fff; padding: 10px 50px;"> Learn more</a> 
                     </center>
                 </div>
             </div>

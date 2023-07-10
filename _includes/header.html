@@ -129,7 +129,36 @@
     max-height: 45px !important;
     margin-right:200px ;
   }
-
+  /* Fixed navbar to top */
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #31668F;
+}
+section.hero {
+  padding-top: 62px;
+}
+/* Currency Selector Section */
+.currency-container {
+  align-self: center;
+}
+#currency-select {
+  background-color: #31668f;
+  color: white;
+  height: 25px;
+  border-radius: 3px;
+  padding: 0 10px;
+}
+@media screen and (max-width: 1023px) {
+  .currency-container {
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    right: 50px;
+  }
+}
 </style>
 
 <nav class="navbar  {% if site.fixed_navbar %} is-fixed-{{ site.fixed_navbar }} {% endif %}" x-data="{ openNav: false }">
@@ -166,6 +195,19 @@
           </div>
 
      
+      </div>
+      <div class="currency-container" style="display: none;">
+        <span class="fw-bold">
+          Currency
+        </span>
+        <span class="currency-dropdown">
+          <select id="currency-select">
+            <option value="1">AUD</option>
+            <option value="2">CAD</option>
+            <option value="3">GBP</option>
+            <option value="4" selected>USD</option>
+          </select>
+        </span>
       </div>
   </div>
 </nav>
