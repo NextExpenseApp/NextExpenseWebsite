@@ -4,5 +4,6 @@ subtitle: Expense reporting made easy
 layout: page
 callouts: home_callouts
 show_sidebar: true
+header_image: testgif.gif
 ---
 
