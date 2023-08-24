@@ -13,7 +13,7 @@ $(document).ready(function() {
     let pricingUrl = window.location.origin + "/pricing/";
     
     if(currentUrl === pricingUrl) {
-        $(".currency-container").css("display", "block");
+        //$(".currency-container").css("display", "block");
     }
 });
 
