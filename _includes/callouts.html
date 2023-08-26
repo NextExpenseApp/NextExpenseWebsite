@@ -96,9 +96,9 @@
     width: 300px;
     height: auto;
 }
-h3.call-to-action-description {
+/* h3.call-to-action-description {
     font-weight: bold;
-}
+} */
 @media screen and (min-width: 1000px) {
     .call-to-action-flex{
     display: flex;
@@ -134,9 +134,7 @@ h3.call-to-action-description {
 .callout-icon {
     margin-bottom: 1.5rem;
 }
-section.hero {
-    padding-top: 0;
-}
+
 @media screen and (max-width: 768px) {
     .subtitle {
         margin-bottom: 20px;
@@ -155,6 +153,9 @@ section.hero {
     padding-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
+    section.hero {
+        padding-top: 0;
+    }
     p.subtitle.is-5 {
         text-align: justify !important;
     }
@@ -170,7 +171,7 @@ section.hero {
     <section class="hero {% if callouts.height %} {{ callouts.height }} {% else %} is-medium {% endif %} {{ callouts.style }}">
         <div class="hero-body">
             <center>
-                <h3 class="hero-line call-to-action-description">Experience the simplest way to log, track, and report expenses from your mobile device. Say goodbye to complex spreadsheets and physical receipts!</h3>
+                <h3 class="hero-line call-to-action-description" style="font-weight: bold;">Experience the simplest way to log, track, and report expenses from your mobile device. Say goodbye to complex spreadsheets and physical receipts!</h3>
             </center>
             <div class="container">
                 <div class="columns is-multiline is-centered">
