@@ -267,18 +267,36 @@ layout: default
 
 
     $(function () {
-        $('.call-to-action-appstore').click(function (e) {
-            e.preventDefault();
-
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'App currently under development for IOs. For more information, please contact us.',
-
-            })
-
-
-        });
+        $('.call-to-action-appstore').click(function(e) {
+          e.preventDefault();
+          
+    const { value: email } = Swal.fire({
+    icon: 'error',
+    title: 'Oops...',
+    text: 'iOS app is currently under development. Provide your email address to get early access when it\'s available.',
+    showCloseButton: true,
+    confirmButtonText: "Notify Me",
+    confirmButtonColor: "#31668F",
+    input: 'email',
+    inputPlaceholder: 'Enter your email address here',
+    // html: `<form action='verify.php' method='post'>
+    //             <input id="swal2-input" class="swal2-input" placeholder="Enter your email address here" type="email" style="display: flex;">
+    //         </form>`
+  
+  }).then((result) => {
+    console.log(result)
+    /* Read more about isConfirmed, isDenied below */
+    if (result.isConfirmed) {
+        //alert(result.value)
+        post('https://formspree.io/f/mdorgygg', {email: result.value}); 
+        Swal.fire('Email Saved!', '', 'success')
+    } else if (result.isDenied) {
+        Swal.fire('Email not saved', '', 'info')
+    }
+    })
+   
+      });
+      
 
         $(document).on('click', '#some-action', function (e) {
             e.preventDefault();
