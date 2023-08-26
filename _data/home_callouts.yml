@@ -7,6 +7,6 @@ items:
     subtitle: Effortlessly track your receipts, per diems, hours worked, and distance traveled all in one place.
     icon: fa-signal
   - title: Submit
-    subtitle: Conveniently generate, customize, and submit professional expense reports from your mobile device
+    subtitle: Conveniently generate, and submit professional expense reports from your mobile device
     icon: fa-money
     icon_brand: true
