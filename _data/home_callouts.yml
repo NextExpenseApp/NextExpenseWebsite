@@ -1,12 +1,12 @@
 style: is-light
 items:
   - title: Capture
-    subtitle: Instantly capture and digitize your receipts with one click, saving you time, effort, and space
+    subtitle: Instantly capture and digitize receipts with one click, saving you time, effort, and physical space
     icon: fa-camera
   - title: Track
-    subtitle: Conveniently track your receipts, per diems, hours worked, and distance traveled all in one place
+    subtitle: Conveniently track and manage receipts, per diems, hours worked, and distance traveled with one app
     icon: fa-signal
   - title: Submit
-    subtitle: Easily generate, customize, and submit professional expense reports from your mobile device
+    subtitle: Rapidly generate, customize, and submit professional expense reports from your mobile device
     icon: fa-money
     icon_brand: true
