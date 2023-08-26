@@ -199,5 +199,13 @@ input:focus, textarea:focus{
       </div>
 
     </div>
+    <script>
+      $("input[type=submit]").on('click', function(e){
+        e.preventDefault();
+        $("form")[0].submit();
+        $("form")[0].reset();
+
+      })
+    </script>
   </body>
 </html>
