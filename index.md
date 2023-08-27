@@ -1,6 +1,6 @@
 ---
 title: Next Expense
-subtitle: Say goodbye to complex spreadsheets and physical receipts!
+subtitle: Do less, achieve more
 layout: page
 callouts: home_callouts
 show_sidebar: true
