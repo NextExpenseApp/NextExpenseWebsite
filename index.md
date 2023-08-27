@@ -1,6 +1,6 @@
 ---
 title: Next Expense
-subtitle: Expense reporting made easy
+subtitle: Say goodbye to complex spreadsheets and physical receipts!
 layout: page
 callouts: home_callouts
 show_sidebar: true
