@@ -2,7 +2,7 @@ style: is-light
 items:
   - title: Save Time
     subtitle: Instantly capture and digitize receipts with one click, saving you time and effort.
-    icon: fa-camera
+    icon: fa-clock-o
   - title: Improve Organization
     subtitle: Manage receipts, per diems, hours worked, and distance traveled with a single app.
     icon: fa-signal
