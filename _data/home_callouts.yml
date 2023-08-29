@@ -1,12 +1,12 @@
 style: is-light
 items:
-  - title: Save Time
+  - title: Improve Time Managment
     subtitle: Instantly capture and digitize receipts with one click, saving you time and effort.
     icon: fa-clock-o
-  - title: Improve Organization
+  - title: Enhance Organization
     subtitle: Manage receipts, per diems, hours worked, and distance traveled with a single app.
     icon: fa-signal
-  - title: Increase Efficiency
+  - title: Optimize Efficiency
     subtitle: Rapidly customize, and submit professional expense reports from your mobile device
-    icon: fa-money
+    icon: fa-line-chart
     icon_brand: true
